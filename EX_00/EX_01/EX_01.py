@@ -46,11 +46,13 @@ for i in range(0, 8):
         for k in range(j + 1, 10):
             combinaciones.append(str(i) + str(j) + str(k))
 
-
+# con la lista ya creada, procedo a hacer la pregunta de como la quiere imprimir
 respuesta = input("¿Quieres ver las combinaciones en orden invertido? (s/n) ")
 if respuesta == 's':
-    combinaciones = combinaciones[::-1]
-    print(', '.join(combinaciones))
+    combinaciones = combinaciones[::-1] 
+    print('Lista invertida:', ', '.join(combinaciones))
 
 else:
-    print(', '.join(combinaciones))
+    print('Lista normal:', ', '.join(combinaciones))
+
+# no hice caso a lo que pedias, pero no sabria como hacerlo de otra manera. vi que usaban el while pero yo no se usarlo AUN
